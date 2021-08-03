@@ -1,0 +1,37 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 12rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.mealsIsLoading,
+.mealsError {
+  text-align: center;
+  margin: 10rem 0;
+}
+.mealsIsLoading {
+  color: aliceblue;
+}
+
+.mealsError {
+  color: red;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
