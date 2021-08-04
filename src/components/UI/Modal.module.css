@@ -11,10 +11,10 @@
 
 .modal {
   position:absolute;
-  top: 15vh;
-  left: 50%;
+  top:70%;
+  left:50%;
+  width:75%;
   transform: translate(-50%, -50%);
-  width: 90%;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
@@ -22,23 +22,12 @@
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
+@media only screen and (max-width:37.5em){
+  .modal{
+   width:calc(100% - 25%)
+  
+  }
 
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  }
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 
